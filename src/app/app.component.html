@@ -1,0 +1,36 @@
+<div class="w-screen h-[100px] bg-myBrown "></div>
+<body class="bg-myBrown w-screen h-screen mt-[-5rem] z-[10]" >
+  <div class="mt-[1rem] mx-auto ml-[4rem]">
+    <div>
+      <h1 class="text-3xl font-semibold text-headBrown">
+        Cookie Crusher
+      </h1>
+      <h2 class="text-3xl font-semibold mt-7 text-white">
+        Crush Cookies — and earn yourself points!
+      </h2>
+    </div>
+    <div class="mt-[2rem] flex flex-row">
+      <div class="flex-col flex ml-[6rem]">
+        <h2 class="text-subHeading font-semibold text-2xl ml-[5rem]">
+          Click the Cookie!
+        </h2>
+        <div class="mt-3 bg-myGray rounded-md w-[22rem] h-[20rem]">
+          <img (click)="counter()" class="w-[22rem] h-[22rem]" src="assets/cookieForAngularremoved.png" alt="Supposed to be Cookie Image">
+        </div>
+      </div>
+      <div class="flex-col ml-[25rem] mt-[2rem]">
+        <div class="flex-row">
+          <h1 class="text-3xl text-white round font-semibold">Score:</h1>
+          <div class="ml-2 mt-[1rem] bg-myGray rounded-lg p-3 px-[11rem] text-white text-semibold text-3xl ">
+            {{score}}
+          </div>
+        </div>
+        <div class="flex-col mt-6">
+          <h1 class="text-3xl text-white font-semibold">Feedback:</h1>
+          <div class="rounded-lg bg-myGray p-8 px-[200px] mt-[1rem] text-semibold text-3xl text-white">{{feedback}}</div>
+        </div>
+        <button (click)="restart()" class="bg-fuschia text-white text-semibold py-3 px-4 ml-[9rem] mt-[2rem] rounded-lg">Restart</button>
+      </div>
+    </div>
+  </div>
+</body>
