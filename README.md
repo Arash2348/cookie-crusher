@@ -1,4 +1,4 @@
-# Angular with Tailwind CSS framework
+# Cookie Crusher Game
 
 ## Quickly install and run code with npm command
 - `npx @aditya6838/angular-starter <app-name>`
